@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="username">Username</label>
+    <input type="text" id="username">
+    <br>
+    <label for="password">Password</label>
+    <input type="text" id="password">
+    <button onclick="validationLogin()">Submit</button>
+    <script>
+        function validationLogin() {
+            const username = document.getElementById('username');
+            const password = document.getElementById('password');
+
+            if (username.value === 'Naufal' && password.value === 'Naufal8899') {
+                alert('success');
+            } else {
+                alert('username atau password salah');
+            }
+        }
+    </script>
+</body>
+</html>
